@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+section h2 {
+    font-family: 'Bungee', cursive;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #09567a;
+    color: #ecf0f1;
+}
+
+.clear {
+    clear: both;
+}
+
+header h1,
+section h2 {
+    font-weight: normal;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024pxpx;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img {
+    height: 24px;
+    background-color: #15678D;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    color: #09567A;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front  {
+    margin-right: 32px;
+}
+
+section {
+    color: #09567A;
+}
+
+.lista-varinhas li {
+    list-style-type: none;
+    max-width: 33%;
+    margin-bottom: 56px;
+    float: left;
+}
+
+.lista-varinhas li img {
+    max-width: 100%;
+}
+
+.lista-varinhas li h3 {
+    margin: 16px 0;
+}
+.lista-varinhas {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.lista-varinhas li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #108cc6;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 16px 0;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 767px) {
+    .lista-varinhas {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+@media screen and (orientation: portrait) and (max-width: 640px) {
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+.container {
+    max-width: 90%;
+    padding: 30px;
+}
+}
+
+@media screen and (max-width: 640px) {
+.container {
+    max-width: 100%;
+    padding: 10px;
+}
+.section {
+    margin-bottom: 56px;
+}
+.lista-varinhas li {
+    list-style-type: none;
+    max-width: 33%;
+    float: left;
+    display: block;
+    font-size: 1.5em;
+}
+.lista-varinhas li img {
+    margin-right: 0px;
+}
+}
